@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+/* nav bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+}
+
+ul {
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+    padding-right: 16px;
+}
+
+li {
+    padding: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
