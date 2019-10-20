@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 54, 54);
 }
 
 /* nav bar */
@@ -25,4 +27,40 @@ li {
     display: flex;
     align-items: center;
     padding-left: 24px;
+}
+
+/* first block */
+
+.first {
+    background-color: rgb(211,211,211);
+    display: flex;    
+}
+
+.leftSide {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.leftSide img {
+    width:100%;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.content {
+    width: 70%;
+
+    
+    padding: 12px;
+}
+
+button {
+    color: white;
+    background-color: rgb(51, 54, 54);
+    padding: 8px 120px;
+    border-style: solid;
 }
