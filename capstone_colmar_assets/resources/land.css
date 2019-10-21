@@ -55,8 +55,6 @@ li {
 
 .content {
     width: 70%;
-
-    
     padding: 12px;
 }
 
@@ -68,39 +66,50 @@ button {
 }
 
 
-/* second block */
+/* second and fourth part pattern */
 
-
-.second {
+.second, .fourthMain{
     display: flex;
 }
+
 .leftPart {
     width: 60%;
     padding: 32px 24px;
 }
 
 .leftPart img {
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .rightPart {
     width: 40%;
     display: flex;
     flex-flow: column;
-    padding-top: 20px;
 }
 
 .note {
     display: flex;
     flex-flow: row;
-    border: 1px solid rgb(206, 203, 203);
+    border: 1px solid rgb(235, 230, 230);
     padding: 16px;
+}
+
+/* second part */
+
+#different {
+    padding-top: 32px;
+    border-top: none;
+}
+
+.note:nth-child(3) {
+    background-color: rgb(211,211,211);
+    border-top: none;
 }
 
 .note img {
     width: 35%;
     height: auto;
+    max-height: 200px;
 }
 
 .info {
@@ -159,5 +168,19 @@ video {
     width: 100%;
 }
 
+/* fourth part */
 
+.fourth h2 {
+    margin: 0;
+    padding: 32px 0;
+    text-align: center;
+}
+
+#gray {
+    background-color: rgb(211,211,211);
+}
+
+.fourthMain .leftPart {
+    padding-top: 0;
+}
 
