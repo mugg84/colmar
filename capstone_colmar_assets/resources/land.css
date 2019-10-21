@@ -2,8 +2,16 @@ body {
     margin: 0;
     width: 100%;
     font-family: 'Hind Vadodara', sans-serif;
-    font-size: 20px;
+    font-size: 1.1em;
     color: rgb(51, 54, 54);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5em 0;
 }
 
 /* nav bar */
@@ -27,6 +35,8 @@ ul {
 
 li {
     padding: 0 8px;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -65,7 +75,7 @@ li {
 button {
     color: white;
     background-color: rgb(51, 54, 54);
-    padding: 8px 120px;
+    padding: 8px 6.5em;
     border-style: solid;
 }
 
@@ -102,6 +112,14 @@ button a {
     padding: 16px;
 }
 
+.note a {
+    color: blue;;
+}
+
+.note h4 {
+    margin: 0.5em 0;
+}
+
 /* second part */
 
 #different {
@@ -122,10 +140,12 @@ button a {
 
 .info {
     padding-left: 24px;
+    display: flex;
+    flex-flow: column;
 }
 
-a {
-    text-decoration: none;
+.signature {
+    padding: 32px 0;
 }
 
 /* thrid part */
