@@ -48,8 +48,8 @@ li {
 /* first block */
 
 .first {
-    background-color: rgb(211,211,211);
-    display: flex;    
+    background-color: rgb(211, 211, 211);
+    display: flex;
 }
 
 .leftSide {
@@ -58,7 +58,7 @@ li {
 }
 
 .leftSide img {
-    width:100%;
+    width: 100%;
 }
 
 .rightSide {
@@ -86,7 +86,8 @@ button a {
 
 /* second and fourth part pattern */
 
-.second, .fourthMain{
+.second,
+.fourthMain {
     display: flex;
 }
 
@@ -96,7 +97,7 @@ button a {
 }
 
 .leftPart img {
-    width: 100%;  
+    width: 100%;
 }
 
 .rightPart {
@@ -113,7 +114,8 @@ button a {
 }
 
 .note a {
-    color: blue;;
+    color: blue;
+    ;
 }
 
 .note h4 {
@@ -122,26 +124,31 @@ button a {
 
 /* second part */
 
+.imageMobile {
+    display: none;
+}
+
 #different {
     padding-top: 32px;
     border-top: none;
 }
 
 .note:nth-child(3) {
-    background-color: rgb(211,211,211);
-    border-top: nonegit;
+    background-color: rgb(211, 211, 211);
+    border-top: none;
 }
 
 .note img {
     width: 35%;
     height: auto;
-    max-height: 200px;
+    max-height: 150px;
 }
 
 .info {
     padding-left: 24px;
     display: flex;
     flex-flow: column;
+    justify-content: center;
 }
 
 .signature {
@@ -151,7 +158,7 @@ button a {
 /* thrid part */
 
 .third {
-    background-color: rgb(211,211,211);
+    background-color: rgb(211, 211, 211);
 }
 
 .third h2 {
@@ -160,7 +167,8 @@ button a {
     margin-bottom: 0;
 }
 
-.firstRow, .secondRow {
+.firstRow,
+.secondRow {
     display: flex;
     justify-content: center;
 }
@@ -189,7 +197,8 @@ button a {
 }
 
 .display h4 {
-    margin: 0;;
+    margin: 0;
+    ;
 }
 
 video {
@@ -205,7 +214,7 @@ video {
 }
 
 #gray {
-    background-color: rgb(211,211,211);
+    background-color: rgb(211, 211, 211);
 }
 
 .fourthMain .leftPart {
@@ -236,4 +245,51 @@ footer p {
 footer ul {
     margin: 0;
     padding: 16px 24px 32px 0;
+}
+
+/* resizing */
+
+@media only screen and (max-width: 900px) {
+    .rightSide .content {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* second block */
+    
+    .second .rightPart {
+        width:100%
+    }
+
+    .second .note {
+        justify-content: center;
+    }
+
+    .second .info {
+        width: 30%;
+    }
+
+    .second .leftPart {
+        display: none;;
+    }
+
+    .imageFull {
+        display: none;
+    }
+    
+    .imageMobile {
+        display: inline;
+    }
+
+    /* fourth block */
+
+    .rightPart {
+        font-size: 0.8em;
+    }
+
+    .rightPart img {
+        max-height: 100px;
+    }
 }
